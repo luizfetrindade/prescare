@@ -1,0 +1,26 @@
+const users = [
+  { nome: 'Afonso' },
+  { nome: 'Olimar' },
+  { nome: 'Alvaro' },
+  { nome: 'Gilberto' },
+  { nome: 'Makelele' },
+  { nome: 'David' },
+  { nome: 'Yaya' },
+  { nome: 'Diovane' },
+  { nome: 'Marcos' },
+  { nome: 'Luiz' },
+  { nome: 'Murilo' },
+  { nome: 'Lindice' },
+  { nome: 'Claudia' },
+  { nome: 'Camila' },
+  { nome: 'Aline' },
+  { nome: 'Laura' },
+  { nome: 'Luiz' },
+  { nome: 'Patrick' },
+  { nome: 'Marta' },
+  { nome: 'Juliana' },
+  { nome: 'Mohamed' },
+  { nome: 'Filéps' },
+]
+
+module.exports = users.sort()

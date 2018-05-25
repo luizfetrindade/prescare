@@ -3,10 +3,12 @@ const Sequelize = require('sequelize')
 const expressLayouts = require('express-ejs-layouts')
 const ejs = require('ejs')
 const rotas = require ('./src/routes')
+const settings = require('./settings')
+
 const tabelaFarmaceutica = require('./src/mocks/tabelaFarmaceutica')
 const usuarios = require('./src/mocks/userArray')
 const usuario = require('./src/mocks/user')
-const settings = require('./settings')
+
 const app = express()
 
 const startApplication = () => {
