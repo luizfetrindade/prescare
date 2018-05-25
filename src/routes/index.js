@@ -8,8 +8,8 @@ const sobre = require('../routes/sobre')
 const acolhidos = require('../mocks/acolhido')
 const dadosFarmacia = require('../mocks/farmacia')
 const users = require('../mocks/listaAcolhidos')
-const user = require('../mocks/user')
 const tabelaFarmaceutica = require('../mocks/tabelaFarmaceutica')
+const user = require('../mocks/user')
 
 const allRoutes = {
   acolhido: acolhido(acolhidos),
