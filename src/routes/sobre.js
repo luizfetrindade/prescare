@@ -1,3 +1,3 @@
-const about = (user) => (req, res) => res.render('pages/about', { usuario: user })
+const sobre = (user) => (req, res) => res.render('pages/sobre', { usuario: user })
 
-module.exports = about
+module.exports = sobre

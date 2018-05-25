@@ -1,13 +1,13 @@
-const listChildren = require("../../src/routes/listChildren")
+const listaAcolhidos = require("../../src/routes/listaAcolhidos")
 
-describe('Quando acesso ListChildren', () => {
+describe('Quando acesso listaAcolhidos', () => {
     it('Deve mostrar uma lista de nomes', () => {
         const req = {}
         const res = {render : jest.fn()}
         const users = [{ nome: 'Leo' }, { nome: 'Luna' } ]
         
-        listChildren(users)(req,res)
+        listaAcolhidos(users)(req,res)
         
-        expect(res.render).toBeCalledWith('pages/listChildren', { users } )
+        expect(res.render).toBeCalledWith('pages/listaAcolhidos', { users } )
     })
 })

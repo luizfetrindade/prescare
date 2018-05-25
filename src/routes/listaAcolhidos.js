@@ -1,3 +1,3 @@
-const listChildren = (userArray) => (req, res) => { res.render('pages/listChildren', { users: userArray })}
+const listaAcolhidos = (userArray) => (req, res) => { res.render('pages/listaAcolhidos', { users: userArray })}
 
-module.exports = listChildren
+module.exports = listaAcolhidos

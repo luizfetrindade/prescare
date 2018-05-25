@@ -1,6 +1,6 @@
-const listChildren = require('../routes/listChildren')
+const listaAcolhidos = require('../routes/listaAcolhidos')
 const home = require('../routes/home')
-const about = require('../routes/about')
+const sobre = require('../routes/sobre')
 const acolhido = require('../routes/acolhido')
 const farmaceutica = require('../routes/farmaceutica')
 const prescricaoAtualizada = require('../routes/prescricaoAtualizada')
@@ -12,9 +12,9 @@ const tabelaFarmaceutica = require('../mocks/tabelaFarmaceutica')
 const dadosFarmacia = require('../mocks/farmacia')
 
 const allRoutes = {
-  listChildren: listChildren(users),
+  listaAcolhidos: listaAcolhidos(users),
   home: home(),
-  about: about(user),
+  sobre: sobre(user),
   acolhido: acolhido(acolhidos),
   prescricaoAtualizada: prescricaoAtualizada(tabelaFarmaceutica),
   farmaceutica : farmaceutica(dadosFarmacia)
