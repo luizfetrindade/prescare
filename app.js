@@ -20,7 +20,7 @@ const startApplication = () => {
     .set('port', (process.env.PORT || 3000))
     .get('/', rotas.home)
     .get('/sobre', rotas.sobre)
-    .get('/acolhidas', rotas.listaAcolhidos)
+    .get('/listaAcolhidos', rotas.listaAcolhidos)
     .get('/acolhido', rotas.acolhido)
     .get('/prescricaoAtualizada', rotas.prescricaoAtualizada)
     .get('/farmaceutica', rotas.farmaceutica)

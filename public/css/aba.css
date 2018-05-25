@@ -44,7 +44,7 @@ input.tabs + label {
   background: #407caa;
   color: #fff;
   cursor: pointer;
-  transition: background ease-in-out .3s;
+  transition: ease-in-out .3s;
 }
 
 input.tabs:checked + label {
