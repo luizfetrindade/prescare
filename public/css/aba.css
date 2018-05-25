@@ -87,7 +87,7 @@ input.tabs:checked + label + div {
 }
 
 .button:hover {
-    color:white;
-    background: #81b4db;
-    border: 2px solid #fff;
+  color:white;
+  background: #81b4db;
+  border: 2px solid #fff;
 }

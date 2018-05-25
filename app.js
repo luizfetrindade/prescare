@@ -19,11 +19,11 @@ const startApplication = () => {
     .set('views/pages', 'tabela-abas')
     .set('port', (process.env.PORT || 3000))
     .get('/', rotas.home)
-    .get('/sobre', rotas.sobre)
-    .get('/listaAcolhidos', rotas.listaAcolhidos)
     .get('/acolhido', rotas.acolhido)
-    .get('/prescricaoAtualizada', rotas.prescricaoAtualizada)
     .get('/farmaceutica', rotas.farmaceutica)
+    .get('/listaAcolhidos', rotas.listaAcolhidos)
+    .get('/prescricaoAtualizada', rotas.prescricaoAtualizada)
+    .get('/sobre', rotas.sobre)
     .listen(settings.PORT, () => console.log('Servidor iniciado em http://localhost:' + settings.PORT))
 }
 

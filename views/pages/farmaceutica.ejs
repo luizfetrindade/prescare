@@ -1,6 +1,6 @@
 <%- contentFor('body') %>
-<table class="tablesfarmaceutica" style="width:90%">
-  <thead class="tablesfarmaceutica">
+<table class="tabela-farmaceutica" style="width:90%">
+  <thead class="tabela-farmaceutica">
     <th>Medicamento</th>
     <th>Via</th>
     <th>Intervalo</th>
@@ -13,33 +13,34 @@
 
   <tbody>
   <%for (dadosFarmacia of farmacia){%>
-      <tr>
-        <td class="medicamento">
+    <tr>
+      <td class="medicamento">
         <%=dadosFarmacia.medicamentos%>
-        </td>
-        <td>
-          <%=dadosFarmacia.via%>
-        </td>
-        <td>
-          <%=dadosFarmacia.intervalo%>
-        </td>
-        <td>
-          <%=dadosFarmacia.formaFarmaceutica%>
-        </td>
-        <td>
-          <%=dadosFarmacia.horario%>
-        </td>
-        <td>
-          <%=dadosFarmacia.lote%>
-        </td>
-        <td>
-          <%=dadosFarmacia.validade%>
-        </td>
-        <td>
-      <div class="input">
-      <input type="checkbox"> </div>
-        </td>
-      </tr>
-    <% } %>
-    </tbody>
-  </table>
+      </td>
+      <td>
+        <%=dadosFarmacia.via%>
+      </td>
+      <td>
+        <%=dadosFarmacia.intervalo%>
+      </td>
+      <td>
+        <%=dadosFarmacia.formaFarmaceutica%>
+      </td>
+      <td>
+        <%=dadosFarmacia.horario%>
+      </td>
+      <td>
+        <%=dadosFarmacia.lote%>
+      </td>
+      <td>
+        <%=dadosFarmacia.validade%>
+      </td>
+      <td>
+        <div class="input">
+          <input type="checkbox"> 
+        </div>
+      </td>
+    </tr>
+  <% } %>
+  </tbody>
+</table>

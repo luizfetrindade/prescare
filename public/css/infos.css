@@ -3,12 +3,12 @@
   flex-flow: row wrap;
 }
 
-.foto-acolhido{
+.img-acolhido{
   width: 100px;
   height: 100px;
 }
 
-.img-acolhido {
+.div-img-acolhido {
   background-color: #81b4db;
   border-radius: 12px;
   flex-grow: 2;
