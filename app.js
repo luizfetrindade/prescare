@@ -1,4 +1,5 @@
 const express = require('express')
+const router = express.Router()
 
 const expressLayouts = require('express-ejs-layouts')
 const ejs = require('ejs')
@@ -46,8 +47,11 @@ const startApplication = () => {
     .get('/prescricaoAtualizada', routes.prescricaoAtualizada)
     .get('/farmaceutica', routes.farmaceutica)
     .get('/historico-prescricao', routes.historicoPrescricao)
+    .get('/qry/:id/test', routes.qry)
+    .get('/qry/:id/update', routes.update)
     .listen(settings.PORT, () => console.log('Servidor iniciado em http://localhost:' + settings.PORT))
 }
+
 
 const criaExemplos = () => {
   models.Acolhido.create({
@@ -73,7 +77,7 @@ const criaExemplos = () => {
 }
 
 databaseConnection
- .sync()
- .then(criaExemplos)
- .then(startApplication)
- .catch(console.log)
+  .sync()
+  .then(criaExemplos)
+  .then(startApplication)
+  .catch(console.log)

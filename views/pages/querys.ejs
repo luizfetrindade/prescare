@@ -1,0 +1,36 @@
+<%- contentFor('body') %>
+    <link rel="stylesheet" type="text/css" href="/css/jquery-ui.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/historicoPrescricao.css">
+    <link rel="stylesheet" type="text/css" href="/css/aba.css">
+
+    <div class="lista">
+        <div class="titulo">
+            - Acolhido -
+            <br> Id:
+            <%= acolhido.id %>
+                <br> Nome:
+                <%= acolhido.nome%>
+                    <br> Peso:
+                    <%= acolhido.peso %>
+                        <br> Alergias:
+                        <%= acolhido.alergias %>
+                            <br> Via:
+                            <%= acolhido.viaAlimentacao %>
+                                <br> Criado:
+                                <%= acolhido.created_at %>
+                                    <br> Atualizado:
+                                    <%= acolhido.updated_at %>
+                                        <br> __________________________________________________________________
+                                        <br>
+                                        <%for (prescricao of presc){%>
+                                            - Prescrição -
+                                            <br> Id:
+                                            <%= prescricao.id %>
+                                                <br> Intervalo:
+                                                <%= prescricao.intervalo%>
+                                                    <br> Acolhido id:
+                                                    <%= prescricao.acolhido_id%>
+                                                        <%}%>
+        </div>
